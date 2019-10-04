@@ -60,6 +60,7 @@ pipeline {
                 }
             }
             steps {
+                sh 'pip install -r requirements.txt'
                 sh 'pylint -f parseable --rcfile=.pylintrc $PACKAGE_NAME | tee pylint.out'
                 recordIssues(
                     enabledForFailure: true,
