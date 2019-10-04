@@ -17,16 +17,15 @@ pipeline {
     agent any
     environment {
         DEPLOY_URL = ''
-        GROUP_NAME = 'group0'
-        GROUP_PORT = '5000'
-        PROJECT_NAME = 'flask-testing'
+        GROUP_NAME = 'group4'
+        GROUP_PORT = '5004'
+        PROJECT_NAME = 'edd-oct-flask-devops'
         PACKAGE_NAME = 'apis'
         LOCAL_BRANCH_NAME = ''
         CURRENT_GIT_COMMIT = ''
         CONTAINER_NAME = ''
         CURRENT_IMAGE_NAME = ''
         PREVIOUS_IMAGE_NAME = ''
-        MAIL_LIST = "frovirat.ficosa@gmail.com"
     }
     stages {
         stage('Info') {
