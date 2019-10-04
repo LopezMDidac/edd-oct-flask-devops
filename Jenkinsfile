@@ -64,7 +64,7 @@ pipeline {
                 recordIssues(
                     enableForFailure: true,
                     ignoreFailedBuild: false,
-                    tools: [ pyLint(pattern: 'pylint.out')]
+                    tools: [ pyLint(pattern: 'pylint.out')],
                     qualityGates: [
                         [threshold: 16, type: 'TOTAL_LOW', unstable: true],
                         [threshold: 11, type: 'TOTAL_NORMAL', unstable: true],
